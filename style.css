@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, button{
+    padding: 10px;
+    font-size: 14px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td{
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button.update{
+    background: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button.delete{
+    background: #f44336;
+    color: white;
+    border: none;
+}
