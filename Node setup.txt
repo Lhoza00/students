@@ -1,0 +1,3 @@
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+npm init -y
+npm install mssql msnodesqlv8 body-parser express cors

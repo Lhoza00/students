@@ -1,0 +1,36 @@
+SDLC
+Feasibility
+Functional vs Non-functional requirements
+System Design concepts
+Design methodolgies:
+	object oriented analysis
+	waterfall, agile, modular, etc
+System Modeling techniques:
+	DFD
+	ERD
+	Use Case
+	Class Diagrams
+Object Oriented concepts:
+	objects
+	classes
+	reusability
+Web Dev Fundamentals:
+	client vs server development
+	frontend vs backend
+	web servers
+	browsers
+	html
+	css
+	cookies
+	js interactivity
+	php (server-side scripting)
+	ajax (asynchronous updates)
+Web Security Concepts:
+	https
+	cross-side scripting
+	sql injections
+Web App concepts:
+	web services
+	cms
+	progressive web apps
+	minification

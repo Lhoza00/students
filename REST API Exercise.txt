@@ -1,0 +1,43 @@
+1. You are required to build a REST API that allows users to manage personal notes. The API must connect to a SQL database.
+
+You may use SQL Server/SQLite3
+
+Database setup:
+table is called notes
+id is an integer and primary key
+title is text
+content is text
+
+make sure to check if table exists on server startup
+
+API endpoints:
+GET/ - retrive notes
+POST/ - add note
+PUT/ - update note
+DELETE/ - removes note
+
+Build frontend and backend
+UI:
+heading and container displaying note
+section with title and note content
+edit button/s
+delete button/s
+form: title input, content area, submit button
+styling (gradient, hovers, etc)
+
+JS:
+fetch notes from API
+dynamically display note
+add notes
+delete notes
+update notes
+show error messages
+
+Challenge:
+seach notes by keyword
+sort notes alphabetically
+add timestamps (created_at)
+show success/error alerts in UI
+use modal popup for editing
+
+PLEASE SEND ME YOUR PROJECT WHEN COMPLETED!
