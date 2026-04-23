@@ -1,0 +1,357 @@
+@import url('global.css');
+.header .container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100% ;
+}
+.hero{
+    min-height: 100%;
+}
+
+.hero .container{
+    display: flex;
+    height: 100%;
+}
+
+#heroCard{
+    background-color: #d3cfcf;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin: auto;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+    gap: 2rem;
+}
+
+#heroCard a{
+    display: flex;
+    width: 100%;
+}
+
+.linkPage{
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 9px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    transition: .2s ease;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.linkPage:hover{
+    background-color: var(--Main)!important;
+    color: white;
+}
+
+/* =========================
+   TODO SECTION
+========================= */
+.toDoSection {
+    min-height: 100%;
+}
+
+.toDoSection .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* FORM */
+#toDoForm {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: max-content;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+}
+
+#toDoForm .containerInput input{
+    border: 0px solid black;
+    border-radius: 4px;
+    caret-color: var(--Main);
+    padding: 0.4rem;
+}
+
+#todoTitle {
+    width: 55%;
+}
+
+#todoDate {
+    width: 10rem;
+}
+
+.fa-repeat{
+    font-size: 1.5rem;
+    margin: auto 0 ;
+}
+
+#todoInput {
+    min-width: 60%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.4rem;
+    background-color: white;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+#toDoForm .containerInput button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* =========================
+   TODO LIST GRID
+========================= */
+.toDoList {
+    width: 100%;
+    margin: 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    padding: 0;
+    background-color: #2a3a72;
+}
+
+/* CARD */
+.toDoList li {
+    list-style: none;
+    padding: 0rem;
+    
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+    opacity: 100;
+    /*transform: translateY(20px);*/
+    
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    display: flex;
+
+    
+    gap: 0.3rem;
+    padding: 0.5rem;
+    max-width: max-content;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: var(--Tertiary);
+}
+
+.toDoList li.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* GRID INSIDE CARD */
+.todo-grid .todo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid black;
+}
+
+
+    
+
+/* TITLE */
+.todo-title {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+
+/* DATE */
+.todo-date {
+    border: 0px solid black;
+    border-radius: 5px;
+    color: #A9A9A9
+}
+
+/* TASK (contenteditable) */
+.todo-task {
+    max-width: 18rem;
+    min-height: 2rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #fff;
+    cursor: text;
+    word-break: break-word;
+}
+
+/* ACTIONS */
+.todo-actions {
+    display: flex;
+    margin-top: 0.2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-actions button {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: var(--Secondary);
+    cursor: pointer;
+}
+
+/* DELETE ICON (if still used) */
+.fas.fa-trash-alt {
+    margin-left: 1rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.fas.fa-trash-alt:hover {
+    color: red;
+}
+
+/* COMPLETED STYLE */
+.todo {
+    transition: all 0.3s ease;
+}
+
+.completed-todo {
+    transform: scale(0.95);
+    filter: grayscale(100%) blur(1px);
+    opacity: 0.7;
+    background-color: #f0f0f0;
+}
+.containerInput{
+    width: 100%;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.containerInput:first-child div{
+    display: flex;
+    gap: 1rem;
+    
+}
+div[contenteditable="true"]:empty::before,
+div[contenteditable="true"]:has(br:only-child)::before{
+    content: attr(placeholder);
+    color: gray;
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+div[contenteditable="true"]:focus:before{
+    content: "";
+    font-size: 1.2rem;
+}
+/* =====================
+   CAREER SECTION (UNCHANGED)
+========================= */
+.careerSection .container {
+    min-height: 100dvh;
+    max-width: 100dvw;
+    padding: 20px;
+    
+    box-shadow: 0 4px 15px rgba(58, 155, 220, 0.4);
+
+    background: linear-gradient(
+      135deg,
+      #2a3a72 0%,
+      #5360a6 30%,
+      #7b78b8 55%,
+      var(--Primary) 70%,
+      #9a8fc1 85%,
+      var(--Secondary) 100%
+    );
+}
+
+.bubbleWrap h1{
+    font-size: 2rem;
+}
+
+.bubbleWrap ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.bubbleWrap ul li{
+    background-color: var(--Tertiary);
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.bubbleWrap ul li:hover{
+    background-color: var(--Tertiary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 475px) {
+     #heroCard, #Card{
+        width: 60%;
+     }
+}
+
+@media (min-width: 768px) {
+    #Card{
+        width: 45%;
+    }
+
+    #toDoForm {
+        width: 70dvw;
+    }
+
+    .toDoList li {
+        width: 70dvw;
+    }
+
+    #toDoForm button{
+        width: 10dvw;
+    }
+
+    .bubbleWrap h1{
+        font-size: 3rem;
+    }
+
+    .bubbleWrap ul li{
+        font-size: 1.8rem;
+    }
+
+    .todo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .todo-task {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .toDoList {  
+        padding: 0 5rem;
+    }
+
+    .todo-grid {
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    .todo-task {
+        grid-column: auto;
+    }
+}

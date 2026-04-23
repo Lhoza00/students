@@ -1,0 +1,60 @@
+<html id="indexPage">
+    <special-head></special-head>
+    <body>
+        <special-header></special-header>
+        <main>
+            <section class="toDoSection">
+                <div class="container">
+                    <form id="toDoForm">
+                        <div class="containerInput">
+                            <input type="text" name="todoTitle" placeholder="Enter task title" id="todoTitle" maxlength="25" required>
+                            <div><input type="date">
+                            <i class="fa-solid fa-repeat"></i></div>    
+                        </div>
+                        <div class="containerInput">
+                            
+                            <div contenteditable="true" type="text" placeholder="Enter task here" name="todoInput" id="todoInput" maxlength="255" required></div>
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                    <div >
+                        <ul class="toDoList">
+                            <li>
+                            <div class="todo-grid">
+                                <div class="todo-header">
+                                    <h5>${todo.id}</h5>
+                                    <h3 class="todo-title">${todo.title}</h3>
+                                    <p class="todo-date">${todo.date}</p>
+                                </div>
+                                <div class="todo-task" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, expedita dolore qui, est cumque necessitatibus quam similique</div>
+                                <div class="todo-actions">
+                                    <button class="delete">Delete</button>
+                                    <button class="toggle">${todo.completed ? 'Undo' : 'Complete'}</button>
+                                </div>
+                            </div>
+                            </li>
+                            <li>
+                            <div class="todo-grid">
+                                <div class="todo-header">
+                                    <h5>${todo.id}</h5>
+                                    <h3 class="todo-title">${todo.title}</h3>
+                                    <p class="todo-date">${todo.date}Lorem</p>
+                                </div>
+                                <div class="todo-task" contenteditable="true">${todo.task}</div>
+                                <div class="todo-actions">
+                                    <button class="delete">Delete</button>
+                                    <button class="toggle">${todo.completed ? 'Undo' : 'Complete'}</button>
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <special-footer></special-footer>
+    </body>
+    <script src="Components/MainComponents.js"></script>
+    <script src="Components/main.js" defer></script>
+</html>
+        
